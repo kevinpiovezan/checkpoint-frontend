@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Paulo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&family=Roboto:wght@300;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <a href="index.html">
+                <h1>São Paulo</h1>
+            </a>
+        </header>
+        <main>
+            <p>
+                São Paulo, <span>centro financeiro do Brasil </span>, está entre as cidades mais populosas do mundo, com
+                diversas instituições culturais e uma rica tradição arquitetônica. Há prédios simbólicos como a
+                <span>catedral neogótica </span>, o <span>Edifício Martinelli</span> , um arranha-céu inaugurado em
+                1929, e o <span>Edifício Copan</span>, com suas linhas curvas projetadas pelo arquiteto modernista Oscar
+                Niemeyer. A igreja em estilo colonial do Pátio do Colégio marca o local onde os padres jesuítas fundaram
+                a cidade em 1554.
+            </p>
+        </main>
+        <article>
+            <form action="#">
+                <h2>Formulário de Cadastro</h2>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" maxlength="100" id="nome" placeholder="Meu Nome">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="email@email.com">
+                </div>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="num" id="telefone" pattern="[1-9]{2}[0-9]{5}[0-9]{4}"placeholder="11912345678">
+                </div>
+                <div>
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento">
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    <label for="maiorDeIdade">Maior de Idade:</label>
+                    <label for="maiorDeIdade">Sim</label>
+                    <input type="radio" name="maiorDeIdade" id="maiorDeIdade" value="sim">
+                    <label for="menorDeIdade">Não</label>
+                    <input type="radio" name="maiorDeIdade" id="menorDeIdade" value="nao">
+                </div>
+                <div>
+                    <h3>Interesses:</h3>
+                    <label for="igreja">Igreja da Sé</label>
+                    <input type="radio" name="interesses" id="igreja">
+                    <label for="morumbi">Estádio Morumbi</label>
+                    <input type="radio" name="interesses" id="morumbi">
+                    <label for="ibirapuera">Parque Ibirapuera</label>
+                    <input type="radio" name="interesses" id="ibirapuera">
+                </div>
+                <div>
+                    <h3>Você é:</h3>
+                    <label for="turista">Turista</label>
+                    <input type="checkbox" name="usuario" id="turista">
+                    <label for="residente">Residente</label>
+                    <input type="checkbox" name="usuario" id="residente">
+                    <label for="estudante">Estudante</label>
+                    <input type="checkbox" name="usuario" id="estudante">
+                </div>
+                <div class="buttons">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Resetar</button>
+                </div>
+            </form>
+        </article>
+        <footer>
+            <a href="https://www.instagram.com/prefsp/" target="_blank">
+                <img src="./instagram.png" alt="logo instagram">
+            </a>
+            <a href="https://www.youtube.com/user/prefeiturasaopaulo" target="_blank">
+                <img src="./youtube-logo-0.png" alt="logo youtube">
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>

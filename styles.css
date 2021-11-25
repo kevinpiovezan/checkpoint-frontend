@@ -1,0 +1,106 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background-image: url("https://cognatis.com.br/wp-content/uploads/2021/01/Sao-Paulo-467-banner-1.jpg");
+    background-size: cover;
+}
+
+header {
+    font-family: 'Estonia', 'sans-serif';
+    text-align: center;
+    padding: 1rem;
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+span {
+    font-weight: 600;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+aside {
+    font-family: 'Estonia', 'sans-serif';
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+h2 {
+    margin: 0;
+    text-align: center;
+}
+section {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.432);
+    display: flex;
+    justify-content: center;
+}
+ul {
+    list-style: decimal;
+}
+img {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+}
+a{
+    font-style: none;
+    color: #ffffff;
+    font-family: 'Estonia', 'sans-serif';
+    font-size: 4rem;
+}
+form {
+    background-color: rgba(0, 0, 0, 0.432);
+    display: inline-block;
+    width: 50rem;
+    height: auto;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+h3 {
+    margin: 0;
+}
+input {
+    margin: 0.5rem;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    padding: 1rem;
+    background-color: #0d7fca;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
