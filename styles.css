@@ -104,3 +104,9 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+    .nome:hover {
+        background-color: orangered;
+            color: black;
+
+    }
