@@ -8,8 +8,9 @@
     <title>São Paulo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Estonia&family=Roboto:wght@300;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap" rel="stylesheet">
+    rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -20,74 +21,75 @@
                 <h1>São Paulo</h1>
             </a>
         </header>
-        <main>
-            <p>
-                São Paulo, <span>centro financeiro do Brasil </span>, está entre as cidades mais populosas do mundo, com
-                diversas instituições culturais e uma rica tradição arquitetônica. Há prédios simbólicos como a
-                <span>catedral neogótica </span>, o <span>Edifício Martinelli</span> , um arranha-céu inaugurado em
-                1929, e o <span>Edifício Copan</span>, com suas linhas curvas projetadas pelo arquiteto modernista Oscar
-                Niemeyer. A igreja em estilo colonial do Pátio do Colégio marca o local onde os padres jesuítas fundaram
-                a cidade em 1554.
-            </p>
-        </main>
-        <article>
-            <form action="#">
-                <h2>Formulário de Cadastro</h2>
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input class="input campo__preencher campo__preencher" type="text" maxlength="100" id="nome" placeholder="Meu Nome">
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input class="input campo__preencher" type="email" id="email" placeholder="email@email.com">
-                </div>
-                <div>
-                    <label for="telefone">Telefone:</label>
-                    <input class="input campo__preencher" type="num" id="telefone" pattern="[1-9]{2}[0-9]{5}[0-9]{4}"placeholder="11912345678">
-                </div>
-                <div>
-                    <label for="nascimento">Data de Nascimento:</label>
-                    <input class="input campo__preencher" type="date" id="nascimento">
-                </div>
-                <div>
 
-                </div>
+
+        <form class="formulario" action="#">
+
+            <h3>Formulário de Cadastro</h3>
+
+            <div>
+                <label for="nome">Nome:</label>
+            </div>
+            <input required class="input campo__preencher campo__preencher" type="text" maxlength="100" id="nome"
+                placeholder="Meu Nome">
+
+            <div>
+                <label for="email">Email:</label>
+            </div>
+            <input required class="input campo__preencher" type="email" id="email" placeholder="email@email.com">
+
+            <div>
+                <label for="telefone">Telefone:</label>
+            </div>
+            <input required class="input campo__preencher" type="num" id="telefone" pattern="[1-9]{2}[0-9]{5}[0-9]{4}"
+                placeholder="11912345678">
+
+            <div>
+                <label for="nascimento">Data de Nascimento:</label>
+            </div>
+            <input required class="input campo__preencher" type="date" id="nascimento">
+            <div>
+                <div><label for="maiorDeIdade">Maior de Idade:</label> </div>
+                <label for="maiorDeIdade">Sim</label>
+                <input checked required type="radio" name="maiorDeIdade" id="maiorDeIdade" value="sim">
+                <label for="menorDeIdade">Não</label>
+                <input required type="radio" name="maiorDeIdade" id="menorDeIdade" value="nao">
+            </div>
+            <div>
+                <div><label><span>Interesses:</span></label> </div>
                 <div>
-                    <label for="maiorDeIdade">Maior de Idade:</label>
-                    <label for="maiorDeIdade">Sim</label>
-                    <input type="radio" name="maiorDeIdade" id="maiorDeIdade" value="sim">
-                    <label for="menorDeIdade">Não</label>
-                    <input type="radio" name="maiorDeIdade" id="menorDeIdade" value="nao">
-                </div>
-                <div>
-                    <h3>Interesses:</h3>
                     <label for="igreja">Igreja da Sé</label>
-                    <input type="radio" name="interesses" id="igreja">
+                    <input type="checkbox" name="interesses" id="igreja">
                     <label for="morumbi">Estádio Morumbi</label>
-                    <input type="radio" name="interesses" id="morumbi">
-                    <label for="ibirapuera">Parque Ibirapuera</label>
-                    <input type="radio" name="interesses" id="ibirapuera">
+                    <input type="checkbox" name="interesses" id="morumbi">
                 </div>
                 <div>
-                    <h3>Você é:</h3>
-                    <label for="turista">Turista</label>
-                    <input type="checkbox" name="usuario" id="turista">
-                    <label for="residente">Residente</label>
-                    <input type="checkbox" name="usuario" id="residente">
-                    <label for="estudante">Estudante</label>
-                    <input type="checkbox" name="usuario" id="estudante">
+                    <label for="ibirapuera">Parque Ibirapuera</label>
+                    <input type="checkbox" name="interesses" id="ibirapuera">
+                    <label for="cultura">Bairro Liberdade</label>
+                    <input type="checkbox" name="interesses" id="cultura">
                 </div>
-                <div class="buttons">
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Resetar</button>
-                </div>
-            </form>
-        </article>
+            </div>
+            <div>
+                <div><label><span>Você é:</span></label></div>
+                <label for="turista">Turista</label>
+                <input type="radio" name="usuario" id="turista">
+                <label for="residente">Residente</label>
+                <input type="radio" name="usuario" id="residente">
+                <label for="estudante">Estudante</label>
+                <input type="radio" name="usuario" id="estudante">
+            </div>
+            <div class="buttons">
+                <button class="buttn" type="submit">Enviar</button>
+                <button class="buttn" type="reset">Limpar</button>
+            </div>
+        </form>
+
         <footer>
-            <a href="https://www.instagram.com/prefsp/" target="_blank">
+            <a class="redes" href="https://www.instagram.com/prefsp/" target="_blank">
                 <img src="./instagram.png" alt="logo instagram">
             </a>
-            <a href="https://www.youtube.com/user/prefeiturasaopaulo" target="_blank">
+            <a class="redes" href="https://www.youtube.com/user/prefeiturasaopaulo" target="_blank">
                 <img src="./youtube-logo-0.png" alt="logo youtube">
             </a>
         </footer>

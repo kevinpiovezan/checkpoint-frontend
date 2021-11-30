@@ -7,12 +7,12 @@ html {
 
 body {
     height: 100vh;
-    background-image: url("https://cognatis.com.br/wp-content/uploads/2021/01/Sao-Paulo-467-banner-1.jpg");
-    background-size: cover;
+    background-image: url('./sp2.png');
+    background-size: contain;
 }
 
 header {
-    font-family: 'Estonia', 'sans-serif';
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     padding: 1rem;
     font-size: 4rem;
@@ -21,13 +21,19 @@ header {
 
 h1 {
     margin: 0;
+    text-decoration: none;
+    font-size: 7rem;
+    font-weight: 600;
 }
 
 main {
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.432);
+    padding: 8px;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 span {
@@ -38,21 +44,28 @@ article {
     display: flex;
     justify-content: flex-end;
 }
+
 aside {
-    font-family: 'Estonia', 'sans-serif';
+    font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
+    text-align: left;
     font-size: 4rem;
     padding: 1rem;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.432);
 }
+
 h2 {
     margin: 0;
+    padding: 2rem;
     text-align: center;
+    font-weight: 500;
+    font-size: 5rem;
+
 }
 section {
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.432);
@@ -67,50 +80,106 @@ img {
     height: 5rem;
     padding: 1rem;
 }
+
 a{
     font-style: none;
     color: #ffffff;
-    font-family: 'Estonia', 'sans-serif';
+    font-family: 'Raleway', sans-serif;
     font-size: 4rem;
+    text-decoration: none;
 }
+
 form {
     background-color: rgba(0, 0, 0, 0.705);
-    display: inline-block;
-    width: 35%;
+    border-radius: 20px;
+    width: 450px;
     height: auto;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     color: #ffffff;
     font-weight: bold;
+    padding: 3rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 h3 {
     margin: 0;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
 }
 input {
-    margin: 0.5rem;
+    margin: 1rem;
 }
+
 .buttons{
     display: flex;
     justify-content: space-evenly;
 }
+
 button{
     padding: 1rem;
-    background-color: #0d7fca;
+    background-color: rgb(110, 23, 23);
     color: #ffffff;
     font-weight: bold;
-    border-radius: 20%;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.buttn:hover {
+    background-color: rgb(22, 21, 21);
+    color: #ffffff;
+    
 }
 footer {
     display: flex;
     justify-content: center;
+    background-color:rgba(0, 0, 0, 0.705);
+    margin-top: 3rem;
 }
 
 .input:hover {
-        background-color: orangered;
-            color: #ffffff;
+    background-color: rgb(110, 23, 23);
+    color: #ffffff;
 
 }
 .campo__preencher:hover {
     transform: scale(1.1);
     transition-duration: 1.5s;
 }
+
+label {
+    font-weight: 500;
+}
+
+.redes:hover{
+    animation: grow;
+    transform: scale(1.1);
+}
+
+.clique {
+    padding: 3rem;
+    background-color: rgb(110, 23, 23);
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 12pt;
+    border-radius: 50px;
+    display: inline-flex
+}
+
+.lista ul li{
+    display: inline-block;
+    padding-right: 4px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.432);
+
+}
+
+#video {
+    text-align: center;
+}
+
